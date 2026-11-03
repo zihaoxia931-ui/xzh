@@ -17,9 +17,115 @@
    <label for="code">邀请码</label><div class="input-wrap"><input id="code" name="code" type="password" minlength="12" maxlength="64" placeholder="XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" required aria-describedby="message"><button class="reveal" type="button" id="reveal" aria-label="显示邀请码" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
    <button id="enter" type="submit">进入工作台 ↗</button>
    <div id="message" class="message" role="status" aria-live="polite">无需注册。支持小写、空格和分隔线。</div>
+   <progress id="downloadProgress" aria-label="加密资料下载进度" hidden style="width:100%;height:4px;accent-color:#d8b28c"></progress>
   </form>
   <div class="note"><span>资料以加密文件托管，邀请码仅在当前浏览器中用于解密。</span><span>邀请码不会提交到网页地址，也不会保存；刷新后需重新输入。</span></div>
   <noscript><p>请允许网页运行 JavaScript，以便在本机解密工作档案。</p></noscript>
  </main>
- <script type="module" src="./unlock.js"></script>
+ <script type="application/json" id="encryptedVault">{"version":1,"kdf":"PBKDF2-SHA256","iterations":300000,"expiresAt":"2026-11-09T10:23:05.829Z","payload":{"iv":"G6bzg5UdIPBGo/f4","compression":"gzip"},"slots":[{"id":"112816be43d980f3","salt":"HYJ8uye7qF0UHABZsRsnSw==","iv":"2ZNCRyiOPVLuD84x","wrappedKey":"O0l/TVmy4e+1lm4Vqnh4pzUdYMwOtJF3TFMnwyolIkFJBY4YhzP+EC9gOk6Cjtb0"},{"id":"074d9a1684d45291","salt":"gesFoaAxGFA0DBOrkDvJYQ==","iv":"32vf5SYrEC40FN5Y","wrappedKey":"t9iRN6h8ufq0c/9lo6SVGMsyNtvB6KgE1tUjLPDn9gTV79Wi/xjxg8M0FR6F45Rv"},{"id":"82f7ec1a8dec7cc1","salt":"A7NubU9l9k5iczck22TlvQ==","iv":"MumqTCxgbobB4n28","wrappedKey":"+NibWTQ2QLSwMngwSOaCMQnD2tihkqIQxuz62Vaqi+FhmkQd0l9e/Fx574uhAnFl"},{"id":"1f958bdc489bbcf7","salt":"GOd7GB3dkeNVOkmfNAMlCg==","iv":"lIOzbtXZuG1ccngC","wrappedKey":"iSIwqB7nCX4YnhqFQA3p3icxmIuIjkRJV3BvOPCTcmPjZMqxD+bzWlJSzyiRRAo7"},{"id":"f601a33fb7440b1a","salt":"zR7GvYc+qHOwYkI8nAc+dA==","iv":"v94sPw3c+i3RGdaV","wrappedKey":"MldtV03OC09YeIWepam8kH5oZ9dTOwl/c+eQTKiByS+/7GMNkr+IhDDHolUA4uwF"},{"id":"1a39305747ccc2d2","salt":"51MnAyk4BcYq7ibpAxI7nw==","iv":"so9AQOQtgghHWhqA","wrappedKey":"mBoakQ0fU0t3Z4C9/raiBxyjCvKlBkmUdP8i0crLiFTsyI4jOVyXnNP9uBun7hU/"}],"transfer":{"sha256":"afe1bd7b6da3a4bcfd9eae29b1328b4ae70bc165830c08f34062787229d2ad56","bytes":2881341,"parts":[{"file":"archive-afe1bd7b6da3-01.json","bytes":196608,"sha256":"da7e0ce0ac9aa57a78229686be38a74e7515bb5d017abf6eae25229535b5038d"},{"file":"archive-afe1bd7b6da3-02.json","bytes":196608,"sha256":"bce615f687f40b3114cdf3a4412e6c44d1fb2497be9dddff29017dba9efb8588"},{"file":"archive-afe1bd7b6da3-03.json","bytes":196608,"sha256":"5775415f8da4ac4778038a1cd753f2a030619c56437b267983ec7ad53ba618dd"},{"file":"archive-afe1bd7b6da3-04.json","bytes":196608,"sha256":"015aa95dc7e0feb3ae09734cb1dba189a45c8883bf026539b076cb65210ff0cc"},{"file":"archive-afe1bd7b6da3-05.json","bytes":196608,"sha256":"7edf1b36b5935ad16916df6bd886e7b298642afbb73a6345566b470f8129feaf"},{"file":"archive-afe1bd7b6da3-06.json","bytes":196608,"sha256":"067562d4a69de1d3886cb4ea3f839cbfc2bd1ccdea80c677c8616575cb9d5ae8"},{"file":"archive-afe1bd7b6da3-07.json","bytes":196608,"sha256":"d9958f1c59e8cd1ddddd1667dcf0b0639d265e57f2a628a308ea4f0e283c3178"},{"file":"archive-afe1bd7b6da3-08.json","bytes":196608,"sha256":"8cb312533accec3245d443ba101297637f482bff848d954503475deed572d9c7"},{"file":"archive-afe1bd7b6da3-09.json","bytes":196608,"sha256":"5599460da8f7b7d998eb7772e5c7e1f74b5e88317019ca1efc412a5f1caf3c14"},{"file":"archive-afe1bd7b6da3-10.json","bytes":196608,"sha256":"11b080196bac5e6a911dc46a168083722c5f9bdaa1bee160aa9c871502a16482"},{"file":"archive-afe1bd7b6da3-11.json","bytes":196608,"sha256":"125da77b5debeb5d46bf9eda8d4a4a7cdac920f731608724aa8a8a8f4e8c69a1"},{"file":"archive-afe1bd7b6da3-12.json","bytes":196608,"sha256":"517e4a2be51dab87b38222e46fd79ee7290cf218cecfcc16f803f9e9d3c25dbc"},{"file":"archive-afe1bd7b6da3-13.json","bytes":196608,"sha256":"8a570e7091d335412c604e9d31f69ef7470cf341a61ae901f4c3d7794792ef7f"},{"file":"archive-afe1bd7b6da3-14.json","bytes":196608,"sha256":"a562fa841db7a9a5d1c56ecbf5c1ff04792f033256caca6d63b8f319eb327fb4"},{"file":"archive-afe1bd7b6da3-15.json","bytes":128829,"sha256":"5de5acac002521b343f12cad107bf8eb3cbbea4eaa9dce2ebe4bed500826e2c4"}]}}</script>
+ <script type="module">const encoder=new TextEncoder();
+const CONTEXT='xzh.workbench.v1';
+const normalize=code=>String(code||'').trim().toUpperCase().replace(/[\s-]/g,'');
+const fromBase64=text=>Uint8Array.from(atob(text),c=>c.charCodeAt(0));
+async function unlockKey(code,vault){
+ const normalized=normalize(code);
+ if(!/^(?:[A-HJ-NP-Z2-9]{12}|XZH[A-F0-9]{32})$/.test(normalized))throw Error('INVALID_CODE');
+ if(vault.version!==1||vault.kdf!=='PBKDF2-SHA256'||vault.iterations!==300000||!Array.isArray(vault.slots)||vault.slots.length>12)throw Error('BAD_VAULT');
+ const material=await crypto.subtle.importKey('raw',encoder.encode(normalized),'PBKDF2',false,['deriveKey']);
+ for(const slot of vault.slots){
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:fromBase64(slot.salt),iterations:vault.iterations,hash:'SHA-256'},material,{name:'AES-GCM',length:256},false,['decrypt']);
+  try{
+   const raw=await crypto.subtle.decrypt({name:'AES-GCM',iv:fromBase64(slot.iv),additionalData:encoder.encode(CONTEXT+':keywrap:'+slot.id)},key,fromBase64(slot.wrappedKey));
+   return await crypto.subtle.importKey('raw',raw,{name:'AES-GCM'},false,['decrypt']);
+  }catch{}
+ }
+ throw Error('INVALID_CODE');
+}
+async function decryptArchive(key,vault,ciphertext){
+ return new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:fromBase64(vault.payload.iv),additionalData:encoder.encode(CONTEXT+':gzip')},key,ciphertext));
+}
+
+class TransferError extends Error {
+ constructor(kind,file,status){super(kind);this.name='TransferError';this.kind=kind;this.file=file;this.status=status;}
+}
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const hashHex=async bytes=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),x=>x.toString(16).padStart(2,'0')).join('');
+function createArchiveDownloader(manifest,{baseUrl,fetchImpl=fetch,delay=pause,timeoutMs=60000,attempts=3,concurrency=3,onProgress=()=>{}}={}){
+ if(!manifest||!Array.isArray(manifest.parts)||manifest.parts.length<1||manifest.parts.length>64||!Number.isSafeInteger(manifest.bytes)||manifest.bytes>16000000)throw new TransferError('manifest');
+ for(const p of manifest.parts)if(!/^archive-[a-f0-9]{12}-\d{2}\.json$/.test(p.file)||!Number.isSafeInteger(p.bytes)||p.bytes<1||p.bytes>262144||!/^[a-f0-9]{64}$/.test(p.sha256))throw new TransferError('manifest');
+ if(manifest.parts.reduce((n,p)=>n+p.bytes,0)!==manifest.bytes||!/^[a-f0-9]{64}$/.test(manifest.sha256))throw new TransferError('manifest');
+ const cache=new Map();let running=false;
+ const report=()=>onProgress({completed:cache.size,total:manifest.parts.length,bytes:[...cache.values()].reduce((n,x)=>n+x.byteLength,0),totalBytes:manifest.bytes});
+ async function loadPart(part){
+  if(cache.has(part.file))return;
+  let last;
+  for(let attempt=0;attempt<attempts;attempt++){
+   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);
+   try{
+    const response=await fetchImpl(new URL(part.file,baseUrl),{cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal});
+    if(!response.ok)throw new TransferError('http',part.file,response.status);
+    const text=await response.text();
+    if(text.length>Math.ceil(part.bytes/3)*4+1024)throw new TransferError('content',part.file);
+    let record;try{record=JSON.parse(text);}catch{throw new TransferError('content',part.file);}
+    if(typeof record.data!=='string'||!/^[A-Za-z0-9+/]*={0,2}$/.test(record.data))throw new TransferError('content',part.file);
+    let bytes;try{bytes=Uint8Array.from(atob(record.data),c=>c.charCodeAt(0));}catch{throw new TransferError('content',part.file);}
+    if(bytes.byteLength!==part.bytes||await hashHex(bytes)!==part.sha256)throw new TransferError('integrity',part.file);
+    cache.set(part.file,bytes);report();return;
+   }catch(error){
+    last=controller.signal.aborted?new TransferError('timeout',part.file):error instanceof TransferError?error:new TransferError('network',part.file);
+   }finally{clearTimeout(timer);}
+   if(last.kind==='http'&&last.status===404)throw last;
+   if(attempt+1<attempts)await delay(750*(attempt+1));
+  }
+  throw last;
+ }
+ return {get completed(){return cache.size;},async download(){
+  if(running)throw new TransferError('busy');running=true;report();
+  try{
+   const pending=manifest.parts.filter(p=>!cache.has(p.file));let cursor=0,firstError;
+   await Promise.all(Array.from({length:Math.min(concurrency,pending.length)},async()=>{while(cursor<pending.length&&!firstError){const part=pending[cursor++];try{await loadPart(part);}catch(error){firstError??=error;}}}));
+   if(firstError)throw firstError;
+   const all=new Uint8Array(manifest.bytes);let offset=0;for(const part of manifest.parts){all.set(cache.get(part.file),offset);offset+=part.bytes;}
+   if(await hashHex(all)!==manifest.sha256)throw new TransferError('integrity');
+   return all;
+  }finally{running=false;}
+ }};
+}
+
+const form=document.querySelector('#inviteForm'),input=document.querySelector('#code'),button=document.querySelector('#enter'),message=document.querySelector('#message'),reveal=document.querySelector('#reveal'),progress=document.querySelector('#downloadProgress');
+const vault=JSON.parse(document.querySelector('#encryptedVault').textContent);
+let busy=false,lastCode='',unlockedKey=null,phase='code';
+function status(text,error=false){message.textContent=text;message.classList.toggle('error',error);}
+const downloader=createArchiveDownloader(vault.transfer,{baseUrl:location.href,onProgress:p=>{progress.hidden=false;progress.value=p.bytes;progress.max=p.totalBytes;status(`邀请码已验证，资料加载中：${p.completed}/${p.total}（${Math.round(p.bytes/p.totalBytes*100)}%）。网络慢时会自动重试。`);}});
+reveal.addEventListener('click',()=>{const show=input.type==='password';input.type=show?'text':'password';reveal.setAttribute('aria-label',show?'隐藏邀请码':'显示邀请码');reveal.setAttribute('aria-pressed',String(show));});
+form.addEventListener('submit',async event=>{
+ event.preventDefault();if(busy)return;
+ if(!isSecureContext||!crypto.subtle||typeof DecompressionStream==='undefined'){status('请使用新版 Chrome、Edge 或 Safari 打开 HTTPS 网址。',true);return;}
+ busy=true;button.disabled=true;button.textContent='正在打开…';form.setAttribute('aria-busy','true');
+ try{
+  phase='code';status('正在本机验证邀请码…');
+  if(Date.parse(vault.expiresAt)<=Date.now())throw Error('EXPIRED');
+  const code=normalize(input.value);
+  if(!unlockedKey||code!==lastCode){unlockedKey=null;lastCode='';unlockedKey=await unlockKey(code,vault);lastCode=code;}
+  phase='download';const ciphertext=await downloader.download();
+  phase='decrypt';status('资料已完整下载，正在解密…');
+  const packed=await decryptArchive(unlockedKey,vault,ciphertext);
+  phase='document';const stream=new Blob([packed]).stream().pipeThrough(new DecompressionStream('gzip'));
+  const html=await new Response(stream).text();
+  if(!/^<!doctype html>/i.test(html))throw Error('BAD_DOCUMENT');
+  input.value='';lastCode='';unlockedKey=null;
+  const exit='<a href="./" style="position:fixed;left:16px;bottom:12px;z-index:10000;padding:8px 12px;border:1px solid #a58a6b66;border-radius:4px;background:#211d18;color:#e1c2a1;font:12px sans-serif;text-decoration:none" aria-label="退出并锁定工作台">退出并锁定 ↗</a>';
+  document.open();document.write(html.replace('</body>',exit+'</body>'));document.close();
+ }catch(error){
+  let text;
+  if(error.message==='INVALID_CODE')text='邀请码不正确，请检查后重试。';
+  else if(error.message==='EXPIRED')text='当前分享已到期，请联系分享者。';
+  else if(error instanceof TransferError){
+   const done=`已保留 ${downloader.completed}/${vault.transfer.parts.length} 段。`;
+   text=error.kind==='http'&&error.status===404?'资料分段暂未发布完整（404）。请稍后刷新重试。':error.kind==='http'?`资料下载返回 ${error.status}。${done}点击“继续加载”重试。`:error.kind==='integrity'||error.kind==='content'?`网络返回的文件不完整或内容异常。${done}点击“继续加载”重新校验。`:`邀请码已验证，但资料下载${error.kind==='timeout'?'超时':'中断'}。${done}点击“继续加载”，无需重输邀请码。`;
+  }else text=phase==='decrypt'?'资料完整，但解密校验失败，请联系分享者检查版本。':phase==='document'?'浏览器无法展开资料，请使用新版 Chrome、Edge 或 Safari 重试。':'无法完成本机验证，请刷新页面重试。';
+  status(text,true);busy=false;button.disabled=false;button.textContent=phase==='download'?'继续加载 ↗':'进入工作台 ↗';form.removeAttribute('aria-busy');
+ }
+});
+</script>
 </body></html>
