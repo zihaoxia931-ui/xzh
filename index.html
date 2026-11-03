@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+ <title>受邀访问 · 私人工作台</title>
+ <style>
+ :root{color-scheme:dark;font-family:Inter,"Microsoft YaHei",sans-serif;color:#eee7dd;background:#191714}*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:28px;background:radial-gradient(ellipse at 20% 0%,#49372a60,transparent 60%),#191714}.wrap{width:min(100%,500px)}.mark{width:54px;height:54px;display:grid;place-items:center;border:1px solid #a78a6b65;border-radius:50%;color:#d8b28c;margin-bottom:38px}.mark svg{width:24px;height:24px}.eyebrow{font-size:11px;letter-spacing:.21em;color:#b8a592}h1{font-size:clamp(30px,6vw,43px);line-height:1.3;letter-spacing:-.04em;margin:16px 0 19px}p{font-size:15px;line-height:1.9;color:#bcb1a4;margin:0}form{margin-top:32px}label{display:block;font-size:14px;margin-bottom:11px}.input-wrap{display:flex;gap:8px}input{flex:1;min-width:0;width:100%;border:1px solid #695b4c;background:#25211c;color:#fff8ef;border-radius:6px;padding:16px;font:16px ui-monospace,monospace;letter-spacing:.045em;outline:none}input:focus{border-color:#d8b28c;box-shadow:0 0 0 3px #d8b28c16}button{border:0;cursor:pointer;font:inherit}.reveal{width:49px;flex:none;border:1px solid #695b4c;border-radius:6px;background:transparent;color:#c8bbac}.reveal svg{width:19px;vertical-align:middle}#enter{width:100%;min-height:53px;border-radius:6px;color:#241b14;background:#d8b28c;margin-top:14px;font-size:15px;font-weight:600;transition:background .18s,transform .18s}#enter:hover{background:#e7c7a4;transform:translateY(-1px)}#enter:active{transform:translateY(0)}#enter:disabled{cursor:wait;opacity:.65;transform:none}.message{min-height:26px;font-size:13px;color:#bbaa96;line-height:1.8;margin-top:13px}.message.error{color:#efb29c}.note{border-top:1px solid #62524244;font-size:12px;line-height:1.9;color:#94897b;margin-top:26px;padding-top:20px}.note span{display:block}noscript p{margin-top:20px;color:#e6b59d}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+ </style>
+</head>
+<body>
+ <main class="wrap">
+  <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></div>
+  <div class="eyebrow">A PRIVATE WORKSPACE</div><h1>只为受邀的你，<br>打开这一页。</h1>
+  <p>一份持续更新的个人工作档案。<br>输入邀请码，查看完整的工作与积累。</p>
+  <form id="inviteForm" autocomplete="off">
+   <label for="code">邀请码</label><div class="input-wrap"><input id="code" name="code" type="password" minlength="12" maxlength="64" placeholder="XXXX-XXXX-XXXX" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" required aria-describedby="message"><button class="reveal" type="button" id="reveal" aria-label="显示邀请码" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+   <button id="enter" type="submit">进入工作台 ↗</button>
+   <div id="message" class="message" role="status" aria-live="polite">无需注册。支持小写、空格和分隔线。</div>
+  </form>
+  <div class="note"><span>资料以加密文件托管，邀请码仅在当前浏览器中用于解密。</span><span>邀请码不会提交到网页地址，也不会保存；刷新后需重新输入。</span></div>
+  <noscript><p>请允许网页运行 JavaScript，以便在本机解密工作档案。</p></noscript>
+ </main>
+ <script type="module" src="./unlock.js"></script>
+</body></html>
